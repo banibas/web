@@ -52,12 +52,11 @@ function hidePrivateOrBusinessSection(sections, privateIsSelected, businessSelec
     const isPrivateSection = navigationText.indexOf('privatkunden') !== -1;
     const isBusinessSection = navigationText.indexOf('unternehmenskunden') !== -1;
     if (privateIsSelected && isBusinessSection) {
-      section.style.visibility = "hidden";
+      section.style.display = "none";
     }
     if (businessSelected && isPrivateSection) {
-      section.style.visibility = "hidden";
+      section.style.display = "none";
     }
-
   });
 }
 
